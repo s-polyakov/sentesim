@@ -1,0 +1,1 @@
+window.serverURL = "http://localhost:8080";
