@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #1f1f1f;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.form-container {
+  width: 100%;
+}
+.input-text {
+  font-size: 14px;
+  padding: 12px 15px;
+  border: 1px solid #cecece;
+  outline: none;
+  font-weight: 400;
+  max-width: 100%;
+}
+.input-text::placeholder {
+  color: #999;
+}
+.input-submit {
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+}
+.msg{
+  background-color: aquamarine;
+}
+.doc-item {
+  list-style-type: none;
+  padding: 17px 0px;
+  border-bottom: 1px solid #eaeaea;
+}
+.doc-item input {
+  margin-right: 15px;
+}
+.doc-item button {
+  background: #d35e0f;
+  color: #fff;
+  border: 1px solid #d35e0f;
+  padding: 3px 7px;
+  cursor: pointer;
+  float: right;
+  outline: none;
+}
+.page-numbering{
+  padding: 20px 0px;
+  text-align: center;
+}
+.page-number{
+  padding: 0px 5px;
+  color: blue;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li button {
+  color: #0275d8;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li button:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+ul.breadcrumb li button:focus {
+  color: #01447e;
+  text-decoration: none;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 10px;
+}
+
+.info {
+  padding: 20px;
+  background-color: chocolate;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
