@@ -13,9 +13,8 @@ Client part was writen in React.
 1) install Python 3.7
 
 2) create virtual environment  
-`python.exe -m venv <path to folder>` 
-and activate it 
- 
+`python.exe -m venv <path to folder>`  
+
 3) istall Python libs:  
 `pip install -r requirements.txt`  
 `python -m nltk.downloader all`  
