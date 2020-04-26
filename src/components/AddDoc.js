@@ -1,9 +1,8 @@
 import React, {useState} from "react"
 import axios from "axios";
-import packageJson from '../../package.json'
 
 const AddDoc = props => {
-    const serverURL = packageJson.serverURL;
+    const serverURL = window.serverURL;
 
     const [inputText, setInputText] = useState({
         content: "",

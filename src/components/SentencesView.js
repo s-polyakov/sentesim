@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import SentenceItem from "./SentenceItem";
-import packageJson from '../../package.json'
 
 
 const SentencesView = (props) => {
-    const serverURL = packageJson.serverURL;
+    const serverURL = window.serverURL;
 
     const [sentences, setSentences] = useState([]);
     const [pageSize, setPageSize] = useState(null);

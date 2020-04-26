@@ -1,5 +1,7 @@
 class Config:
+    host = 'localhost'
+    port = '8080'
     db_connection = "sqlite:///docstorage.db"
     page_size = 10
     number_of_search_items = 100
-    client_url = "http://localhost:3000"  # url of the react server
+    client_url = "http://localhost:5000"  # url of the react server

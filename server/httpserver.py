@@ -1,5 +1,7 @@
 from typing import Dict, Tuple, List
 import json
+import argparse
+
 from aiohttp import web
 import aiohttp_cors
 import numpy as np
@@ -126,4 +128,3 @@ for route in list(app.router.routes()):
 app.on_startup.append(on_startup)
 app.on_cleanup.append(on_cleanup)
 app.add_routes(routes)
-web.run_app(app)

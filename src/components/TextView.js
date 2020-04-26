@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import packageJson from '../../package.json'
 
 const TextView = (props) => {
-    const serverURL = packageJson.serverURL;
+    const serverURL = window.serverURL;
 
     const docId = props.docId;
 

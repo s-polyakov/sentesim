@@ -6,7 +6,6 @@ import SentencesView from "./SentencesView"
 import SearchView from "./SearchView"
 import TextView from "./TextView"
 import axios from "axios"
-import packageJson from '../../package.json'
 
 const modeEnum = {
     DOCS_VIEW: 1,
@@ -16,7 +15,7 @@ const modeEnum = {
 }
 
 const AppContainer = props => {
-    const serverURL = packageJson.serverURL;
+    const serverURL = window.serverURL;
 
     const [docs, setDocs] = useState([]);
     const [mode, setMode] = useState(modeEnum.DOCS_VIEW);

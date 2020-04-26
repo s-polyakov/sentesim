@@ -2,11 +2,9 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Loader from 'react-loader-spinner'
 import SearchItem from "./SearchItem";
-import packageJson from '../../package.json'
-
 
 const SearchView = (props) => {
-    const serverURL = packageJson.serverURL;
+    const serverURL = window.serverURL;
 
     const [sentences, setSentences] = useState([])
     const [pageSize, setPageSize] = useState(null);
